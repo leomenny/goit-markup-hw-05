@@ -26,9 +26,9 @@
             <span class="header-logo-web">WEB</span>
             <span class="header-logo-studio">STUDIO</span>
           </a>
-          <ul class="list">
+          <ul class="list menu">
             <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Studio</a>
+              <a class="menu-link link current" href="./index.html">Studio</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="./portfolio.html">Portfolio</a>
@@ -58,10 +58,12 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="modal-btn" type="button">Order Service</button>
+          <button class="modal-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <!-- goals and Benefits -->
+      <!-- goals and benefits -->
       <section class="goals-and-benefits">
         <div class="container">
           <h2 hidden>Goals and Benefits</h2>
@@ -386,7 +388,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
         <div>
@@ -436,5 +438,16 @@
         </div>
       </div>
     </footer>
+    <!-- modal.js  -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./img/icons.svg.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
